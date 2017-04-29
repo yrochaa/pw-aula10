@@ -1,9 +1,6 @@
 <%
 String alturaStr = request.getParameter("altura");
 String pesoStr = request.getParameter("peso");
-//float quadrado = (alturaStr*alturaStr);
-
-//idadeStr = idadeStr == null ? "0" : idadeStr;
 
 float altura = Float.parseFloat(alturaStr);
 float peso = Float.parseFloat(pesoStr);
@@ -33,16 +30,3 @@ float calculo = (10000*peso/quadrado);
         <%else if (calculo>40)%>
        <div class="alert alert-success" role="alert" style="margin-top:45px"><%"Você está com OBESIDADE 3 (mórbida)! IMC: " + calculo.toFixed(2)%></div>
     }%>
-
-
-
-    <%
-/*
-String resultado = "";
-boolean maior = maior(idade);
-if (maior) {
-  resultado = "De Maior! :)";
-} else {
-  resultado = "De Menor! :(";
-}*/
-%>
