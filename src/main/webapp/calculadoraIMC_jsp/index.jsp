@@ -40,11 +40,11 @@
 String alturaStr = request.getParameter("altura");
 String pesoStr = request.getParameter("peso");
 
-float altura = Float.parseFloat(alturaStr);
-float peso = Float.parseFloat(pesoStr);
-float quadrado = (alturaStr*alturaStr);
+double altura = Double.parseFloat(alturaStr);
+double peso = Double.parseFloat(pesoStr);
+double quadrado = (alturaStr*alturaStr);
 
-float calculo = (10000*peso/quadrado);
+double calculo = (10000*peso/quadrado);
 
 String resultado = "";
 
