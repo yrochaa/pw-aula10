@@ -53,25 +53,25 @@ double calculo = (10000*peso/quadrado);
 String resultado = "";
 
 if(calculo<17){
-            resultado = "Você está MUITO ABAIXO DO PESO ! IMC " + calculo;
+            resultado = "Voce esta MUITO ABAIXO DO PESO ! IMC " + calculo;
         }
 	else if(calculo<=17 && calculo<=18.5){
-             resultado = "Você está ABAIXO DO PESO ! IMC " + calculo;
+             resultado = "Voce esta ABAIXO DO PESO ! IMC " + calculo;
         }
        else if(calculo>=18.5 && calculo<24.9){
-            resultado = "Você está com o PESO NORMAL ! IMC: " + calculo;
+            resultado = "Voce esta com o PESO NORMAL ! IMC: " + calculo;
         }
         else if(calculo>=25 && calculo<29.9) {
-            resultado = "Você está ACIMA DO PESO ! IMC: " + calculo;
+            resultado = "Voce esta ACIMA DO PESO ! IMC: " + calculo;
         }
         else if(calculo>=30 && calculo<34.9) {
-            resultado = "Você está com OBESIDADE 1 ! IMC: " + calculo;
+            resultado = "Voce esta com OBESIDADE 1 ! IMC: " + calculo;
         }
 		    else if(calculo>=35 && calculo<39.9) {
-            resultado = "Você está com OBESIDADE 2 (severa)! IMC: " + calculo;
+            resultado = "Voce esta com OBESIDADE 2 (severa)! IMC: " + calculo;
         }
         else if (calculo>=40){
-       resultado = "Você está com OBESIDADE 3 (mórbida)! IMC: " + calculo;
+       resultado = "Voce esta com OBESIDADE 3 (mórbida)! IMC: " + calculo;
     }
 %>
 
