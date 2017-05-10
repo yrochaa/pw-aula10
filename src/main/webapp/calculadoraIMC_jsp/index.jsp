@@ -71,7 +71,7 @@ if(calculo<17){
             resultado = "Voce esta com OBESIDADE 2 (severa)! IMC: " + calculo;
         }
         else if (calculo>=40){
-       resultado = "Voce esta com OBESIDADE 3 (mórbida)! IMC: " + calculo;
+       resultado = "Voce esta com OBESIDADE 3 (morbida)! IMC: " + calculo;
     }
 %>
 
