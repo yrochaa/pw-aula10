@@ -1,8 +1,8 @@
-# Aula 09 - PW
+# Aula 10 - PW
 
 ## Objetivos
 
-* Usar o projeto de Calcular IMC da Aula 08 e substituir o JavaScript contido nele por JSP
+* Usar o projeto de Calcular IMC em JSP da Aula 09 e usar o MVC.
 
 --------
 
@@ -14,7 +14,7 @@ Para que consiga acessa-la, basta seguir o passo a passo.
 
 Para fazer o clone do projeto, use o comando:
 
-`git clone https://github.com/yrochaa/pw-aula09`
+`git clone https://github.com/yrochaa/pw-aula10`
 
 
 ### Rode o TomCat
