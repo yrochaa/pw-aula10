@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(value = "/mvc/menor-maior")
-public class MenorMaiorController extends HttpServlet {
+@WebServlet(value = "/calculoIMC")
+public class CalculaController extends HttpServlet {
 	
 	@Override
 	protected void doGet(
@@ -17,18 +17,24 @@ public class MenorMaiorController extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 
 		//Prepara para a execução.
-		String idadeStr = request.getParameter("idade");
-		idadeStr = idadeStr == null ? "0" : idadeStr;
-		int idade = Integer.parseInt(idadeStr);
+		String alturaStr = request.getParameter("altura");
+		String pesoStr = request.getParameter("peso");
+		
+		alturaStr = alturaStr == null ? "1" : alturaStr;                    
+		pesoStr = pesoStr == null ? "0" : pesoStr;
+		
+		double altura = Double.parseDouble(alturaStr);
+		double peso = Double.parseDouble(pesoStr);
 		
 		//Executa "regras de negócio".
-		MenorMaiorModel menorMaiorModel = new MenorMaiorModel(idade);
-		String resultado = menorMaiorModel.resultado();
+		MenorMaiorModel CalculaModel = new CalculaModel(altura,peso);
+		String resultado = CalculaModel.resultado();
 		
 		//Passa a váriável para a página JSP.
 		request.setAttribute("resultado", resultado);
-		//Chama página JSP.
-		request.getRequestDispatcher("menor-maior-view.jsp").
+		
+		//Chama página html.
+		request.getRequestDispatcher("index.html").
 			forward(request, response);
 
 	}
