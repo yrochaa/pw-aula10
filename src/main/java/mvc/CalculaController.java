@@ -27,16 +27,14 @@ public class CalculaController extends HttpServlet {
 		double peso = Double.parseDouble(pesoStr);
 		
 		//Executa "regras de negócio".
-		MenorMaiorModel CalculaModel = new CalculaModel(altura,peso);
+		CalculaModel CalculaModel = new CalculaModel(altura,peso);
 		String resultado = CalculaModel.resultado();
 		
 		//Passa a váriável para a página JSP.
 		request.setAttribute("resultado", resultado);
 		
-		//Chama página html.
-		request.getRequestDispatcher("index.html").
+		//Chama página jsp.
+		request.getRequestDispatcher("calculadoraIMC_jsp/index.jsp").
 			forward(request, response);
-
 	}
-	
 }
