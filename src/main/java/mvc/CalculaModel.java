@@ -9,7 +9,7 @@ public class CalculaModel {
 		this.peso = peso;
 	}
 
-	public double calculo() {
+	public double calculo(){
 		return (peso/(altura*altura));
 	}
 
