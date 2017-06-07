@@ -31,4 +31,4 @@ Caso você esteja usando o linux, será necessário usar `./mvnw` invés de *mvn
 
 Execute em qualquer navegador web: 
 
-`http://localhost:9090/exercicio/`**calculoIMC**
+`http://localhost:9090/exercicio/calculoIMC`
